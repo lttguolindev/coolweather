@@ -4,11 +4,12 @@ package com.coolweather.android.db;
  * Created by lenovo on 2017/12/3.
  */
 
-public class City extends DataSupport{
+public class City {
     private int id;
     private String cityName;
     private int cityCode;
     private int provinceId;
+    private int provindeId;
 
     public int getId() {
         return id;
@@ -44,5 +45,8 @@ public class City extends DataSupport{
 
     public void setProvindeId(int provindeId) {
         this.provindeId = provindeId;
+    }
+
+    public void save() {
     }
 }

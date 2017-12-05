@@ -76,8 +76,8 @@ public static boolean handleCityResponse(String response, int provinceId){
                 for (int i = 0; i < allCounties.length();i++){
                     JSONObject allCountyObject = allCounties.getJSONObject(i);
                     County county = new County();
-                    county.setCountyName(countyObject.getString("name"));
-                    county.setWeatherId(countyObject.getString("weather_id"));
+                    county.setCountyName(countyObject.getString(Integer.parseInt("name")));
+                    county.setWeatherId(countyObject.getString(Integer.parseInt("weather_id")));
                     county.setCityId(cityId);
                     county.save();
                 }

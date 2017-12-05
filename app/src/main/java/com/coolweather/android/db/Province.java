@@ -4,7 +4,7 @@ package com.coolweather.android.db;
  * Created by lenovo on 2017/12/3.
  */
 
-public class Province extends DataSupport {
+public class Province {
     private int id;
     private String provinceName;
     private int provonceCode;
@@ -37,5 +37,8 @@ public class Province extends DataSupport {
     public void setProvonceCode(int provonceCode)
     {
         this.provonceCode = provonceCode;
+    }
+
+    public static void save() {
     }
 }

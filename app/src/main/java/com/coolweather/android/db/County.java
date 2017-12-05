@@ -4,7 +4,7 @@ package com.coolweather.android.db;
  * Created by lenovo on 2017/12/3.
  */
 
-public class County extends DataSupport {
+public class County {
     private int id;
     private String countyName;
     private String weatherId;
@@ -40,5 +40,8 @@ public class County extends DataSupport {
 
     public void setCityId(int cityId){
         this.cityId = cityId;
+    }
+
+    public void save() {
     }
 }
